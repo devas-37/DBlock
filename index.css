@@ -1,0 +1,210 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    user-select: none;
+    background: var(--background_color);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.score {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.playground {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.high {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.high h1,
+#score {
+    font-family: 'Segoe UI';
+    font-size: 3em;
+    color: silver;
+    margin-left: 15px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.control {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-el {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: width ease 0.2s;
+}
+
+.control-el>* {
+    transition: width ease 0.2s;
+}
+
+
+/* Katak */
+
+.katak {
+    background-color: silver;
+    display: grid;
+    column-gap: 1px;
+    row-gap: 1px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    border: 1px solid silver;
+}
+
+.k1 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border_radius);
+    overflow: hidden;
+}
+
+.a {
+    background-color: var(--a_color);
+}
+
+.tplgrid {
+    background-color: transparent;
+    display: grid;
+    width: fit-content;
+    column-gap: 1px;
+    row-gap: 1px;
+    transition: transform ease 0.1s;
+}
+
+.marg {
+    margin: 0px 50px;
+}
+
+.kf1 {
+    width: 50px;
+    height: 50px;
+    background: var(--blokcha_color);
+    animation-delay: 0.1s;
+    transition: linear 0.2s;
+    opacity: 1;
+}
+
+@keyframes kf1 {
+    from {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+
+.tplDrag {
+    transform: scale(1.5);
+    column-gap: 3px;
+    row-gap: 3px;
+}
+
+.template1 .rangli {
+    opacity: 0.5;
+}
+
+.tpl {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--border_radius);
+}
+
+.rangli {
+    background: var(--blokcha_color);
+}
+
+.hint {
+    background-color: var(--hint_color);
+}
+
+.cont {
+    position: relative;
+    width: 100px;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+    transition: transform ease 0.1s;
+}
+
+.score_animation {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+    color: silver;
+    transition: ease 1s;
+    transform: scale(0);
+}
+
+.GameOverPanel {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: opacity linear 1s;
+    transform: scale(0);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart {
+    appearance: none;
+    background-color: #3A7FFF;
+    border: none;
+    padding: 8px 32px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+    border-radius: 5px;
+}
+
+.restart:hover {
+    background-color: #3472E4;
+}

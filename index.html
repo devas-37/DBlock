@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./jquery.js"></script>
+    <script src="./jquery.rollNumber.js"></script>
+</head>
+<style id="stil">
+     :root {
+        --hint_color: #6E7F80;
+        --background_color: white;
+        --a_color: #BDD9EE;
+        --border_color: #27A8FA;
+        --blokcha_color: url("./Gems/Gem\ Blue.svg");
+        --border_radius: 0px;
+    }
+</style>
+
+<body>
+    <div class="GameOverPanel" id="GOP">
+        <button class="restart" id="restart">QAYTADAN</button>
+    </div>
+    <div class="header">Header</div>
+    <div class="main">
+        <div class="score">
+            <h1 id="score">0</h1>
+        </div>
+        <div class="playground">
+            <div class="katak" id="katak">
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1 a"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+                <div class="k1"></div>
+
+            </div>
+        </div>
+        <div class="high">
+            <svg width="48" height="44" viewBox="0 0 68 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M54 6.87333V0H14V6.87333H0.666656V16.6667C0.666656 25.0833 6.96666 31.9933 15.08 33.1067C16.2426 36.516 18.3047 39.5479 21.0483 41.882C23.7919 44.216 27.1151 45.7655 30.6667 46.3667V50C30.6667 51.7681 29.9643 53.4638 28.714 54.714C27.4638 55.9643 25.7681 56.6667 24 56.6667H20.6667V63.3333H47.3333V56.6667H44C42.2319 56.6667 40.5362 55.9643 39.2859 54.714C38.0357 53.4638 37.3333 51.7681 37.3333 50V46.3667C40.8846 45.7648 44.2075 44.2151 46.951 41.8811C49.6945 39.5472 51.7568 36.5156 52.92 33.1067C61.0333 31.9933 67.3333 25.0833 67.3333 16.6667V6.87333H54ZM7.33332 16.6667V13.54H14V26.0933C12.0516 25.4024 10.3649 24.1254 9.17121 22.4376C7.97757 20.7498 7.33556 18.7339 7.33332 16.6667ZM60.6667 16.6667C60.6639 18.7346 60.0217 20.7511 58.8283 22.4398C57.6348 24.1286 55.9483 25.407 54 26.1V13.5333H60.6667V16.6667Z"
+                    fill="#BDBDBD" />
+            </svg>
+            <h1 id="high_score">0</h1>
+        </div>
+    </div>
+    <div class="control">
+        <div class="control-el" id="ctrl_el">
+
+        </div>
+    </div>
+    <div class="template1" id="template1"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
