@@ -179,7 +179,7 @@ temp = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
-let cell = localStorage.getItem("temp").split(',');
+let cell = localStorage.getItem("temp")?.split(',');
 if (cell ) {
     temp = []
     let h = 0;
