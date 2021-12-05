@@ -180,7 +180,7 @@ temp = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
 ];
 let cell = localStorage.getItem("temp").split(',');
-if (cell !== undefined) {
+if (cell ) {
     temp = []
     let h = 0;
     for (let i = 0; i < 9; i++) {
